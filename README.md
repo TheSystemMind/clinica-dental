@@ -1,6 +1,7 @@
 # 🦷 Sistema de Gestión - Clínica Dental
 
 [![Docker Hub](https://img.shields.io/badge/Docker%20Hub-pchirinos%2Fclinica--dental-blue?logo=docker)](https://hub.docker.com/r/pchirinos/clinica-dental)
+[![GitHub](https://img.shields.io/badge/GitHub-TheSystemMind-181717?logo=github)](https://github.com/TheSystemMind/clinica-dental)
 [![PHP](https://img.shields.io/badge/PHP-8.0+-777BB4?logo=php&logoColor=white)](https://php.net)
 [![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?logo=mysql&logoColor=white)](https://mysql.com)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-7952B3?logo=bootstrap&logoColor=white)](https://getbootstrap.com)
@@ -24,7 +25,7 @@ docker pull pchirinos/clinica-dental
 docker run -d -p 8080:80 pchirinos/clinica-dental
 
 # Opción 2: Usar docker-compose (recomendado)
-git clone https://github.com/pchirinos/clinica-dental.git
+git clone https://github.com/TheSystemMind/clinica-dental.git
 cd clinica-dental
 docker-compose up -d
 ```
