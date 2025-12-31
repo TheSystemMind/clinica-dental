@@ -1,0 +1,555 @@
+/* =============================================
+   CLINICA DENTAL - ESTILOS PROFESIONALES
+   ============================================= */
+
+/* Variables de colores - Tema Dental */
+:root {
+    --primary-color: #0077b6;      /* Azul profesional */
+    --primary-dark: #005a8c;
+    --secondary-color: #00b4d8;    /* Azul claro */
+    --accent-color: #90e0ef;       /* Celeste suave */
+    --success-color: #2ecc71;      /* Verde éxito */
+    --danger-color: #e74c3c;       /* Rojo peligro */
+    --warning-color: #f39c12;      /* Amarillo advertencia */
+    --dark-color: #2c3e50;         /* Gris oscuro */
+    --light-color: #f8f9fa;        /* Gris claro */
+    --white: #ffffff;
+    --gradient-primary: linear-gradient(135deg, #0077b6 0%, #00b4d8 100%);
+}
+
+/* Reset y base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: var(--dark-color);
+    min-height: 100vh;
+}
+
+/* =============================================
+   NAVBAR PERSONALIZADO
+   ============================================= */
+.navbar-custom {
+    background: var(--gradient-primary) !important;
+    box-shadow: 0 2px 15px rgba(0, 119, 182, 0.3);
+    padding: 0.8rem 1rem;
+}
+
+.navbar-custom .navbar-brand {
+    font-weight: 700;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-custom .navbar-brand .logo-icon {
+    font-size: 1.8rem;
+}
+
+.navbar-custom .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--white) !important;
+}
+
+.navbar-custom .btn-logout {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: var(--white);
+    transition: all 0.3s ease;
+}
+
+.navbar-custom .btn-logout:hover {
+    background-color: var(--danger-color);
+    border-color: var(--danger-color);
+}
+
+.user-badge {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* =============================================
+   CONTENEDOR PRINCIPAL
+   ============================================= */
+.main-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* =============================================
+   CARDS Y PANELES
+   ============================================= */
+.card-custom {
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    border: none;
+    overflow: hidden;
+}
+
+.card-header-custom {
+    background: var(--gradient-primary);
+    color: var(--white);
+    padding: 1.2rem 1.5rem;
+    border: none;
+}
+
+.card-header-custom h4 {
+    margin: 0;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-body-custom {
+    padding: 1.5rem;
+}
+
+/* =============================================
+   PÁGINA TÍTULO
+   ============================================= */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.page-title {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* =============================================
+   BOTONES PERSONALIZADOS
+   ============================================= */
+.btn-primary-custom {
+    background: var(--gradient-primary);
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0, 119, 182, 0.3);
+}
+
+.btn-primary-custom:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 119, 182, 0.4);
+    background: var(--primary-dark);
+}
+
+.btn-success-custom {
+    background-color: var(--success-color);
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-success-custom:hover {
+    background-color: #27ae60;
+    transform: translateY(-2px);
+}
+
+.btn-danger-custom {
+    background-color: var(--danger-color);
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-danger-custom:hover {
+    background-color: #c0392b;
+}
+
+.btn-warning-custom {
+    background-color: var(--warning-color);
+    border: none;
+    border-radius: 8px;
+    color: var(--white);
+    transition: all 0.3s ease;
+}
+
+.btn-warning-custom:hover {
+    background-color: #d68910;
+}
+
+/* =============================================
+   TABLAS PERSONALIZADAS
+   ============================================= */
+.table-custom {
+    background: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+}
+
+.table-custom thead {
+    background: var(--gradient-primary);
+    color: var(--white);
+}
+
+.table-custom thead th {
+    padding: 1rem;
+    font-weight: 600;
+    border: none;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+.table-custom tbody tr {
+    transition: all 0.2s ease;
+}
+
+.table-custom tbody tr:hover {
+    background-color: var(--accent-color);
+    transform: scale(1.005);
+}
+
+.table-custom tbody td {
+    padding: 1rem;
+    vertical-align: middle;
+    border-bottom: 1px solid #e9ecef;
+}
+
+/* =============================================
+   FORMULARIOS
+   ============================================= */
+.form-control-custom {
+    border: 2px solid #e0e6ed;
+    border-radius: 8px;
+    padding: 0.7rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-control-custom:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(0, 119, 182, 0.15);
+}
+
+.form-control-custom.is-invalid {
+    border-color: var(--danger-color);
+    background-image: none;
+}
+
+.form-control-custom.is-valid {
+    border-color: var(--success-color);
+    background-image: none;
+}
+
+.form-label-custom {
+    font-weight: 600;
+    color: var(--dark-color);
+    margin-bottom: 0.5rem;
+}
+
+.form-text-helper {
+    font-size: 0.8rem;
+    color: #6c757d;
+    margin-top: 0.3rem;
+}
+
+/* =============================================
+   BADGES DE ESTADO
+   ============================================= */
+.badge-estado {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.badge-programada {
+    background-color: #ffeaa7;
+    color: #856404;
+}
+
+.badge-confirmada {
+    background-color: #81ecec;
+    color: #0c5460;
+}
+
+.badge-completada {
+    background-color: #a8e6cf;
+    color: #155724;
+}
+
+.badge-cancelada {
+    background-color: #ff7675;
+    color: #721c24;
+}
+
+/* =============================================
+   MODALES PERSONALIZADOS
+   ============================================= */
+.modal-custom .modal-content {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.modal-custom .modal-header {
+    background: var(--gradient-primary);
+    color: var(--white);
+    border: none;
+    padding: 1.2rem 1.5rem;
+}
+
+.modal-custom .modal-title {
+    font-weight: 600;
+}
+
+.modal-custom .btn-close {
+    filter: brightness(0) invert(1);
+}
+
+.modal-custom .modal-body {
+    padding: 1.5rem;
+}
+
+.modal-custom .modal-footer {
+    border: none;
+    padding: 1rem 1.5rem;
+    background-color: #f8f9fa;
+}
+
+/* =============================================
+   ALERTAS Y MENSAJES
+   ============================================= */
+.alert-custom {
+    border: none;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.alert-success-custom {
+    background-color: #d4edda;
+    color: #155724;
+    border-left: 4px solid var(--success-color);
+}
+
+.alert-danger-custom {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-left: 4px solid var(--danger-color);
+}
+
+.alert-warning-custom {
+    background-color: #fff3cd;
+    color: #856404;
+    border-left: 4px solid var(--warning-color);
+}
+
+/* =============================================
+   LOGIN PAGE
+   ============================================= */
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient-primary);
+    position: relative;
+    overflow: hidden;
+}
+
+.login-page::before {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='2' fill='rgba(255,255,255,0.1)'/%3E%3C/svg%3E");
+    background-size: 30px 30px;
+    animation: moveBackground 20s linear infinite;
+}
+
+@keyframes moveBackground {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(-30px, -30px); }
+}
+
+.login-card {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 1;
+}
+
+.login-logo {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.login-logo .logo-icon {
+    font-size: 4rem;
+    color: var(--primary-color);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.login-logo h2 {
+    color: var(--primary-color);
+    font-weight: 700;
+    margin: 0;
+}
+
+.login-logo p {
+    color: #6c757d;
+    margin: 0;
+}
+
+/* =============================================
+   FOOTER
+   ============================================= */
+.footer-custom {
+    background-color: var(--dark-color);
+    color: rgba(255, 255, 255, 0.7);
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* =============================================
+   RESPONSIVE
+   ============================================= */
+@media (max-width: 768px) {
+    .main-container {
+        padding: 1rem;
+    }
+    
+    .page-header {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+    
+    .table-custom thead th,
+    .table-custom tbody td {
+        padding: 0.7rem 0.5rem;
+        font-size: 0.85rem;
+    }
+}
+
+/* =============================================
+   ANIMACIONES
+   ============================================= */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.btn-action {
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-action:hover {
+    transform: scale(1.1);
+}
+
+/* Dropdown en tablas */
+.table-responsive {
+    overflow: visible !important;
+}
+
+.dropdown-menu {
+    z-index: 10001 !important;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-item {
+    padding: 0.6rem 1rem;
+    transition: all 0.2s ease;
+}
+
+.dropdown-item:hover {
+    background-color: var(--accent-color);
+}
+
+/* Dropdown estado en acciones - posición fija */
+.btn-group.dropdown .dropdown-menu {
+    position: absolute !important;
+    inset: auto auto auto auto !important;
+    transform: none !important;
+}
+
+.table-custom .btn-group {
+    position: static;
+}
+
+.table-custom td {
+    position: relative;
+}
+
+/* Tooltip helpers - Corregido para evitar parpadeo */
+[data-tooltip] {
+    position: relative;
+}
+
+[data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--dark-color);
+    color: var(--white);
+    padding: 0.4rem 0.8rem;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+[data-tooltip]:hover::after {
+    opacity: 1;
+    visibility: visible;
+}

@@ -1,0 +1,29 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+*.log
+
+# Dependencias
+/vendor/
+/node_modules/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Archivos de entorno
+.env
+.env.local
+.env.*.local
+
+# Docker (archivos temporales)
+.docker/
+
+# Archivos de respaldo
+*.bak
+*.backup
+
+# Archivos de configuración local
+app/config/database.local.php
