@@ -200,20 +200,22 @@ DB_PASS=root
 
 [![Video Demo](https://img.youtube.com/vi/NqQ7C85bAGs/maxresdefault.jpg)](https://youtu.be/NqQ7C85bAGs)
 
-## 👥 Equipo - Grupo 6
+## �‍💻 Autor
 
-| Integrante | Rol |
-|------------|-----|
-| Pedro Chirinos | Desarrollador Full Stack |
-| [Integrante 2] | [Rol] |
-| [Integrante 3] | [Rol] |
-| [Integrante 4] | [Rol] |
+**Peter A. Chirinos N.**
+- 🎯 Desarrollador Full Stack
+- 🐙 GitHub: [@TheSystemMind](https://github.com/TheSystemMind)
+- 🐳 Docker Hub: [pchirinos](https://hub.docker.com/r/pchirinos/clinica-dental)
 
 ## 🎓 Información Académica
 
-- **Curso:** Ingeniería Web
-- **Universidad:** Universidad César Vallejo (UCV)
-- **Ciclo:** 2025-II
+| | |
+|---|---|
+| 📚 **Curso** | Ingeniería Web |
+| 🏫 **Universidad** | Universidad César Vallejo (UCV) |
+| 📅 **Ciclo** | 2025-II |
+| 👨‍🏫 **Docente** | Mg. Carlos Sánchez Villena |
+| 👥 **Grupo** | 6 |
 
 ## 📄 Licencia
 
@@ -222,5 +224,5 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 ---
 
 <p align="center">
-  Hecho con ❤️ por el Grupo 6 | UCV 2025
+  Desarrollado con ❤️ por <strong>Peter A. Chirinos N.</strong> | UCV 2025
 </p>
